@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <title>Marketing Cube Practical Test</title>
+  </head>
+  <body>
+    <!-- header with navigation menu and brand logo -->
+    <nav class="container topnav" id="myTopnav">
+      <img
+        class="brand-logo"
+        src="./img/MC-LOGO-Landcape-RED-FF0033.png"
+        alt="logo"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Marketing&nbsp;Automation</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Customer&nbsp;Success</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- navigation for small devices will be hidden in bigger screen -->
+    <div class="mob-nav">
+      <a href="javascript:void(0);" onclick="toggleNavigation()">
+        MENU <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Section with the home hero banner with description-->
+    <section class="home-hero-section">
+      <div class="home-hero-wrapper">
+        <div class="container home-hero-info">
+          <h1>How can we help you today?</h1>
+          <p>
+            Please take a moment to submit our form below and a member of our
+            team will be in contact <br />shortly to respond to your enquiry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section with the form  -->
+    <section class="form-section padding">
+      <div class="container">
+        <h2 class="red-heading">
+          Why this form is smarter than the average form.
+        </h2>
+        <div class="form-info">
+          <p>
+            You know the routine, however this is a very intelligent form. To
+            start with, we've taken you from our website, to an Eloqua hosted
+            Landing Page - note the change in the URL.
+          </p>
+          <p>
+            Once you submit this form, we'll capture the details you've provided
+            and they will go directly to Eloqua.
+          </p>
+          <p>
+            The form will then send your details to our CRM and create a lead
+            which brings information not just based on what you've told us, but
+            we'll also be able to see the pages of our website you viewed before
+            you submitted the form
+          </p>
+          <p>
+            All of this information will be available to our CRM usets within
+            minutes of you submitting the form.
+          </p>
+          <p>
+            In addition, Eloqua will send what we call a 'Notification Email' to
+            our marketing team which shows us the information that you've
+            entered in the form.
+          </p>
+          <p>
+            Your will also receive an email thanking you for taking the time to
+            contact us today.
+          </p>
+        </div>
+
+        <form>
+          <div>
+            <select required>
+              <option value="" disabled selected
+                >What's your main reason for contacting us today?*</option
+              >
+
+              <option value="1">Enquiring about the services provided</option>
+              <option value="2">Want weekly newsletter subscription</option>
+              <option value="3">
+                Inform me about the future offers and discounts
+              </option>
+              <option value="4">Provide quote for...</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First Name*"
+            required
+          />
+          <br />
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Last Name*"
+            required
+          />
+          <input type="text" name="company" placeholder="Company*" required />
+          <div>
+            <select required>
+              <option value="" disabled selected
+                >Where in the world are you?*</option
+              >
+              <option value="1">Australia</option>
+              <option value="2">New Zealand</option>
+            </select>
+          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Work Email Address*"
+            required
+          />
+          <input type="number" name="mobilePhone" placeholder="Mobile Phone*" />
+          <input type="number" name="workPhone" placeholder="Work Phone" />
+          <div>
+            <select>
+              <option value="" disabled selected
+                >Your preferred contact method</option
+              >
+              <option value="1">Phone</option>
+              <option value="2">Email</option>
+            </select>
+          </div>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Comments"
+          ></textarea>
+          <label class="terms-condition">
+            <input type="checkbox" name="subscribe" required /> I agree to opt
+            into communications.
+            <p>
+              If this box is already ticked, you've previously opted in. By
+              submitting this form you understand and agree to receive relevant
+              future communications, based on personal information collected
+              through email tracking, forms and cookies. Please review our
+              <a class="privacy-policy" href="#" target="_blank"
+                >Privacy Policy</a
+              >
+              to find out more. You may also update specific subscription topics
+              via the 'Manage My Preferences' link in the footer of all our
+              emails.
+            </p>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section of the landing page -->
+    <footer class="container">
+      <span class="back-to-top-link">
+        <a href="#myTopnav" onclick="scrollToTop(1000);"> ^ </a>
+      </span>
+      <h2 class="footer-heading">Marketing Cube</h2>
+      <div class="footer-info">
+        <p>
+          2018 Marketing Cube Pty Ltd. All Rights Reserved. ABN: 64162615269
+        </p>
+        <p>
+          &copy; Head Office: Lilyvale Cottage, 176 Cumberland Street. The
+          Rocks, Sydney, NSW, Australia, 2000. Phone: +61 (0)2 8244 0007 |
+          <a href="#">Our Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
